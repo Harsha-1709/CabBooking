@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ProjectGurukul</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_pick_up">PICK UP</string>
+    <string name="text_drop_off">DROP OFF</string>
+    <string name="btn_message">Message</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_confirm_state">I have arrived</string>
+    <string name="btn_pickup_state">Pick Up</string>
+    <string name="btn_dropoff_state"> Drop Off</string>
+    <string name="btn_checkout_state"> Check Out</string>
+
+
+</resources>

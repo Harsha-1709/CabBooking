@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#000000"
+    tools:context=".ui.customer.booking.processing_booking.ProcessingBookingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Processing your booking..."
+            android:textSize="20dp"
+            android:textColor="@color/quantum_white_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/originTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:drawableLeft="@drawable/ic_location_blue"
+            android:padding="10dp"
+            android:text="Vidyarthi Bhavan"
+            android:textSize="18dp"
+            android:textColor="@color/quantum_white_text"
+            />
+
+        <TextView
+            android:id="@+id/destinationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:drawableLeft="@drawable/ic_location_red"
+            android:padding="10dp"
+            android:text="SLV Corner Veg"
+            android:textSize="18dp"
+            android:textColor="@color/quantum_white_text"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:drawableLeft="@drawable/ic_money"
+                android:text="Price"
+                android:textColor="@color/quantum_white_text"
+                />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="Rs. 100"
+                android:textColor="@color/quantum_white_text"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cancelBookingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
