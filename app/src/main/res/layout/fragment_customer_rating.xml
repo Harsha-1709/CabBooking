@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context=".ui.customer.booking.rating.RatingFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/avatar_card_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:elevation="12dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        app:cardCornerRadius="90dp">
+
+        <ImageView
+            android:id="@+id/profile_avatar"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/quantum_grey300"
+            android:src="@drawable/ic_person" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="How is your trip?"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Please help us to improve\nthe experience with our app\nby evaluating this trip"
+
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:stepSize="1"
+        android:theme="@style/RatingBar" />
+
+    <TextView
+        android:id="@+id/rating_scale_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Awesome"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/feed_back_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:backgroundTint="@color/quantum_grey300"
+        android:hint="Tell us what you loved"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/send_feedback_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Send feedback"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>
